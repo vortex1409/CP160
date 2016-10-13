@@ -1,0 +1,429 @@
+/*
+
+Project: CP160 Assignment #1 (INVOICE)
+
+All code written is owned by Michael Dorfman
+
+AUTHOR INFORMATION
+Name: Michael Dorfman
+Website: https://vortex1409.com
+Github: https://github.com/vortex1409
+
+CSS HAS BEEN VALIDATED
+
+*/
+
+/*
+
+=====================
+BODY, PAGE WRAPPER, VALID DIV
+=====================
+
+*/
+body
+{
+	width:800px;
+	height:auto;
+	background-color:grey;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.valid
+{
+	margin-top:10px;
+	margin-left:10px;
+}
+
+.invoice_wrapper
+{
+	border:4px solid black;
+	height:1100px;
+	width:800px;
+	background-color:white;
+	padding-top:16px;
+	padding-bottom:16px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+/*
+
+=====================
+INVOICE HEADER TEXT
+=====================
+
+*/
+
+.invoice
+{
+	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	float:right;
+	margin-top:90px;
+	color:#ac8e66;
+}
+
+/*
+
+=====================
+HEADER DIV's, LOGO. SUBHEADERS
+=====================
+
+*/
+
+.header
+{
+	height:auto;
+	width:auto;
+}
+
+.logo_static
+{
+	width:auto;
+	height:auto;
+}
+
+.sub_header
+{
+	height:106px;
+	width:auto;
+}
+
+.sub_header_left
+{
+	border:1px solid grey;
+	width:320px;
+	height:auto;
+	float:left;
+}
+
+.sub_header_right
+{
+	float:right;
+}
+
+/*
+
+=====================
+FROM, BILL TO, 
+=====================
+
+*/
+
+.from
+{
+	padding-left:16px;
+}
+
+.bill_to
+{
+	width:auto;
+	height:auto;
+	border:1px solid grey;
+	margin-top:16px;
+}
+
+/*
+
+=====================
+PRICEBOX DIV
+=====================
+
+*/
+
+.pricetable_box
+{
+	width:auto;
+	height:auto;
+	margin-top:16px;
+}
+
+/*
+
+=====================
+FOOTER DIV's
+=====================
+
+*/
+
+.footer
+{
+	width:800px;
+	height:auto;
+	margin-top:16px;
+}
+
+.footer_left	
+{
+	width:330px;
+	background-color:#e2e2e2;
+	border:1px solid grey;
+	float:left;
+}
+
+.footer_right
+{
+	width:250px;
+	float:left;
+	margin-left:50px;
+}
+
+/*
+
+=====================
+UNIVERAL FLOAT CLASSES
+=====================
+
+*/
+
+.fl
+{
+	float:left;
+	text-align:left;
+}
+
+.fr
+{
+	float:right;
+	text-align:right;
+}
+
+/*
+
+=====================
+TEXT ALIGN CLASSES
+=====================
+
+*/
+
+.t_align_right
+{
+	text-align:right;
+}
+
+.t_align_left
+{
+	text-align:left;
+}
+
+.t_align_center
+{
+	text-align:center;
+}
+
+.t_align_generic
+{
+	text-align:right;
+	padding:10px;
+}
+
+.t_align_generic_alt
+{
+	text-align:right;
+}
+
+/*
+
+=====================
+MASTER TABLE STYLE
+=====================
+
+*/
+
+table
+{
+	border-collapse: collapse;
+}
+
+/*
+
+=====================
+GLOBAL PRICE TABLE STYLE
+=====================
+
+*/
+
+tr[class^="pt_"]
+{
+	border-left:1px solid #726056;
+	border-right:1px solid #726056;
+}
+
+/*
+
+=====================
+INFO TABLE STYLES
+=====================
+
+*/
+
+.info_th {
+    text-align: right;
+	border:0px;
+}
+
+.info_td
+{
+	border:2px solid grey;
+	border-collapse: collapse;
+}
+
+/*
+
+=====================
+BILL STYLES
+=====================
+
+*/
+
+.bill_tr
+{
+	color:white;
+	background-color:#726056;
+	text-align:left;
+}
+
+.bill_td
+{
+	width:800px;
+}
+
+.bill_text
+{
+	padding-left:16px;
+}
+
+/*
+
+=====================
+CREDIT, DISCOUNT, BALANCE STYLES
+=====================
+
+*/
+
+.total_credit
+{
+	background-color:#efe9e0;
+	color:black;
+}
+
+.total_discount
+{
+	background-color:#e6e8ec;
+}
+
+/*
+
+=====================
+TABLE OVERRIDE STYLES
+=====================
+
+*/
+
+.total_balance
+{
+	background-color:#b3bdc8;
+}
+
+.total_top
+{
+	border-top:1px solid #7f8a99;
+	border-left:1px solid #7f8a99;
+	border-right:1px solid #7f8a99;
+	padding:3px;
+}
+
+.total_middle
+{
+	border-left:1px solid #7f8a99;
+	border-right:1px solid #7f8a99;
+	padding:3px;
+}
+
+.total_bottom
+{
+	border-left:1px solid #7f8a99;
+	border-right:1px solid #7f8a99;
+	border-bottom:1px solid #7f8a99;
+	padding:3px;
+}
+
+/*
+
+=====================
+CHECKMARK STYLES
+=====================
+
+*/
+
+.check
+{
+	width:20px;
+	height:auto;
+	display: block;
+    margin: 0 auto;
+}
+
+/*
+
+=====================
+DOLLAR SYMBOL STYLE
+=====================
+
+*/
+
+.dollar
+{
+	float:left;
+	padding-right:20px;
+}
+
+.tdollar
+{
+	float:left;
+	padding-right:10px;
+}
+
+/*
+
+=====================
+PRICE TABLE MASTER STYLES
+=====================
+
+*/
+
+.pt_master
+{
+	width:800px;
+}
+
+.pt_header
+{
+	background-color:#726056;
+	color:white;
+}
+
+.pt_odd
+{
+	background-color:#e3dedb;
+	color:black;
+}
+
+.pt_even
+{
+	background-color:white;
+	color:black;
+}
+
+.pt_subtotal
+{
+	border-collapse:separate;
+	border-top:5px double #726056;
+	border-bottom:1px solid #726056;
+	border-left:1px solid #726056;
+	border-right:1px solid #726056;
+	
+}
