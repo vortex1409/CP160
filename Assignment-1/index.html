@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<!--
+Project: CP160 Assignment #1 (INVOICE)
+
+All code written is owned by Michael Dorfman
+
+AUTHOR INFORMATION
+Name: Michael Dorfman
+Website: https://vortex1409.com
+Github: https://github.com/vortex1409
+
+HTML HAS BEEN VALIDATED
+
+-->
+
+	<head>
+		<title>CP160 - Assingment 1 - Invoice</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	</head>
+	<body>
+	<!-- CONTENT START -->
+		<div class="invoice_wrapper">
+	<!-- HEADER START -->
+			<div class="header">
+				<img class="logo_static" alt="logo" src="img/logo.png">
+				<h1 class="invoice">INVOICE</h1>
+				<div class="sub_header">
+					<div class="sub_header_left">
+						<p class="from">
+							1450 Nakina Drive,<br>
+							P.O. Box 398<br>
+							Thunder Bay, Ontario, Canada P7C 4W1<br>
+							Accounting@cp160.ca
+						</p>
+					</div>
+					<div class="sub_header_right">
+						<table>
+							<tr>
+								<th class="info_th">Date&ensp;&ensp;</th>
+								<td class="info_td t_align_generic_alt">10/29/15</td>
+							</tr>
+							<tr>
+								<th class="info_th">Invoice #&ensp;&ensp;</th>
+								<td class="info_td t_align_generic_alt">1111</td>
+							</tr>
+							<tr>
+								<th class="info_th">For:&ensp;&ensp;</th>
+								<td class="info_td t_align_generic_alt">PO# 123456<br><br></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+	<!-- HEADER END -->
+			
+	<!-- BILL TO START -->
+			<div class="bill_to">
+				<table>
+					<tr class="bill_tr">
+						<th class="bill_td">Bill To:</th>
+					</tr>
+					<tr>
+						<td>
+							<p class="bill_text">
+								John Doe<br>
+								XYZ Corporation<br>
+								123 Main Street<br>
+								Thunder Bay, ON<br>
+								(807) 123-4567
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+	<!-- BILL TO END -->
+			
+	<!-- PRICE TABLE START -->
+			<div class="pricetable_box">
+		
+				<table class="pt_master">
+					<tr class="pt_header">
+						<th class="t_align_center">Quantity</th>
+						<th class="t_align_center">Unit</th>
+						<th class="t_align_center">Description</th>
+						<th class="t_align_center">Unit Price</th>
+						<th class="t_align_center">Amount</th>
+						<th class="t_align_center">10%<br> Discount Applied</th>
+					</tr>
+					<tr class="pt_odd">
+						<td class="t_align_center">10</td>
+						<td class="t_align_center">Hours</td>
+						<td class="t_align_left">Needs Analysis and Design</td>
+						<td class="t_align_generic"><span class="dollar">$</span>120.00</td>
+						<td class="t_align_generic"><span class="dollar">$</span>1,080.00</td>
+						<td class="t_align_generic"><img class="check" src="img/check.svg" alt="10% Discount Applied"></td>
+					</tr>
+					<tr class="pt_even">
+						<td class="t_align_center">40</td>
+						<td class="t_align_center">Hours</td>
+						<td class="t_align_left">Website Development</td>
+						<td class="t_align_generic"><span class="dollar">$</span>50.00</td>
+						<td class="t_align_generic"><span class="dollar">$</span>1,800.00</td>
+						<td class="t_align_generic"><img class="check" src="img/check.svg" alt="10% Discount Applied"></td>
+					</tr>
+					<tr class="pt_odd">
+						<td class="t_align_center">1</td>
+						<td class="t_align_center">Anual</td>
+						<td class="t_align_left">Site Hosting</td>
+						<td class="t_align_generic"><span class="dollar">$</span>200.00</td>
+						<td class="t_align_generic"><span class="dollar">$</span>200.00</td>
+						<td></td>
+					</tr>
+					<tr class="pt_even">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic"><span class="dollar">$</span>0.00</td>
+						<td></td>
+					</tr>
+					<tr class="pt_odd">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic"><span class="dollar">$</span>0.00</td>
+						<td></td>
+					</tr>
+					<tr class="pt_even">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic"><span class="dollar">$</span>0.00</td>
+						<td></td>
+					</tr>
+					<tr class="pt_odd">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic"><span class="dollar">$</span>0.00</td>
+						<td></td>
+					</tr>
+					<tr class="pt_even">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic"><span class="dollar">$</span>0.00</td>
+						<td></td>
+					</tr>
+					<tr class="pt_odd">
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic"><span class="dollar">$</span>0.00</td>
+						<td></td>
+					</tr>	
+					<tr class="pt_even pt_subtotal">
+						<th>Subtotal</th>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="t_align_generic t_align_left"><span class="dollar">$</span>3,080.00</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+	<!-- PRICE TABLE END -->		
+	
+	<!-- FOOTER START -->
+			<div class="footer">
+				<div class="footer_left">
+					<p class="from">
+						Payment Due on Receipt<br><br>
+						Make all cheques payable to CP160<br><br>
+						<strong>Thank you for your business!</strong>
+					</p>
+				</div>
+				<div class="footer_right">
+					<table class="total">
+						<tr>
+							<th class="fr">Credit&ensp;</th>
+							<td class="total_credit t_align_right total_top"><span class="tdollar">$</span>-</td>
+						</tr>
+						<tr>
+							<th class="fr">Additional Discount&ensp;</th>
+							<td class="total_discount t_align_right total_middle">20%</td>
+						</tr>
+						<tr>
+							<th class="fr">Blance Due&ensp;</th>
+							<td class="total_balance t_align_right total_bottom"><span class="tdollar">$</span>2,464.00</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	<!-- FOOTER END -->
+		</div>
+	<!-- CONTENT END -->
+	
+	<!-- VALIDATOR BEGIN -->
+		<div class="valid">
+			<img class="vald_img" src="img/valid_html.png" alt="Valid HTML">
+			<img class="vald_img" src="img/valid_html5.png" alt="Valid HTML5">
+			<img class="vald_img" src="img/valid_css.png" alt="Valid CSS">
+			<img class="vald_img" src="img/valid_css3.png" alt="Valid CSS3">
+			<img class="vald_img" src="img/valid_svg.png" alt="Valid SVG Page">
+			<img class="vald_img" src="img/anybrowser.png" alt="Works in Any Browser">
+	
+		</div>
+	<!-- VALIDATOR END -->
+	</body>
+</html>
